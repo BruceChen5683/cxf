@@ -10,9 +10,13 @@ public class MyClient {
         jaxWsProxyFactoryBean.setServiceClass(MyService.class);
 
         MyService service = (MyService) jaxWsProxyFactoryBean.create();
+
+        System.out.println(System.currentTimeMillis());
         System.out.println(service+","+service.getClass().getSuperclass());
 
 
         System.out.println(service.hello("from Java"));
+        System.out.println(System.currentTimeMillis());
+
     }
 }

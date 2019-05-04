@@ -2,11 +2,11 @@ package com.cjl;
 
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 
-public class MyClient {
+public class MyClientForTCPMon {
     public static void main(String[] args) {
         JaxWsProxyFactoryBean jaxWsProxyFactoryBean = new JaxWsProxyFactoryBean();
 
-        jaxWsProxyFactoryBean.setAddress("http://localhost:8080/myservice");
+        jaxWsProxyFactoryBean.setAddress("http://localhost:5555/myservice");
         jaxWsProxyFactoryBean.setServiceClass(MyService.class);
 
         MyService service = (MyService) jaxWsProxyFactoryBean.create();

@@ -9,3 +9,12 @@ JDK版本降低到1.8
 
 
 WSDL(Web Service Description Language,Web服务描述语言)
+
+#### TCPMon
+ListenPort  用于Client转发
+TargetHostname 服务
+TargetProt     服务端口
+
+#### SOAP(Simple Object Access Protocol)
+
+简单对象访问协议，里面的消息都是SOAP消息,WebService所发送的消息都是SOAP消息

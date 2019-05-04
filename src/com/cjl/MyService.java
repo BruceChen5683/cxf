@@ -7,4 +7,6 @@ import javax.jws.WebService;
 public interface MyService {
 
     public String hello(String name);
+
+    public String hello2(String name,String password);
 }
