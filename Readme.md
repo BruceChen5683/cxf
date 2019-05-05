@@ -20,6 +20,6 @@ TargetProt     服务端口
 简单对象访问协议，里面的消息都是SOAP消息,WebService所发送的消息都是SOAP消息
 
 ##### WebService开发模式
-1. 自底向上  先java,再wsdl
-2. 自顶向下 先有wsdl,再java  推荐
+1. 自底向上 (代码优先) 先java,再wsdl
+2. 自顶向下(契约优先) 先有wsdl,再java  推荐
 
