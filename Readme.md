@@ -18,3 +18,8 @@ TargetProt     服务端口
 #### SOAP(Simple Object Access Protocol)
 
 简单对象访问协议，里面的消息都是SOAP消息,WebService所发送的消息都是SOAP消息
+
+##### WebService开发模式
+1. 自底向上  先java,再wsdl
+2. 自顶向下 先有wsdl,再java  推荐
+
