@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(value = XmlAccessType.FIELD)
 public class People {
     private int id;
+    @XmlElement(name = "hahaha")
     private String username;
     private String password;
 
@@ -20,7 +21,6 @@ public class People {
         this.id = id;
     }
 
-    @XmlElement(name = "hahaha")
     public String getUsername() {
         return username;
     }
