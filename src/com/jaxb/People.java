@@ -13,6 +13,17 @@ public class People {
     private String username;
     private String password;
 
+    private School school;
+
+
+    public School getSchool() {
+        return school;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
     public int getId() {
         return id;
     }
@@ -37,12 +48,14 @@ public class People {
         this.password = password;
     }
 
+
     @Override
     public String toString() {
         return "People{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", school=" + school +
                 '}';
     }
 }

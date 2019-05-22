@@ -20,6 +20,18 @@ public class JaxbTest {
             people.setUsername("none");
             people.setPassword("wd");
 
+
+            Restaurant restaurant = new Restaurant();
+            restaurant.setRestaurantName("huandao restaurant");
+            restaurant.setRestaurantAddress("shangdi huandao");
+
+            School school = new School();
+            school.setSchoolName("tsinghua university");
+            school.setRestaurant(restaurant);
+            school.setSchoolAddress("beijing");
+
+            people.setSchool(school);
+
             marshaller.marshal(people,System.out);
 
 
@@ -30,7 +42,6 @@ public class JaxbTest {
             String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><ns2:myroot xmlns:ns2=\"com.jaxb\"><id>11</id><password>wd</password><hahaha>none22</hahaha></ns2:myroot>\n";
 
             People people1 = (People) unmarshaller.unmarshal(new StringReader(xml));
-            System.out.println("JaxbTest.main-- 2");
             System.out.println(people1);
 
 
