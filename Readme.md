@@ -24,5 +24,7 @@ TargetProt     服务端口
 2. 自顶向下(契约优先) 先有wsdl,再java  推荐
 
 ##### CXF中采用Jaxb(Java API for XML Binging)来处理对象到xml以及xml到对象之间的双向转换
+wsdl2java -server -impl -frontend jaxws21 http://localhost:8080/myservice?wsdl
+
 
 
