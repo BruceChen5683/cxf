@@ -28,7 +28,7 @@ import javax.xml.ws.ResponseWrapper;
                       serviceName = "MyServiceImplService",
                       portName = "MyServiceImplPort",
                       targetNamespace = "http://cjl.com/",
-                      wsdlLocation = "http://localhost:8080/myservice?wsdl",
+                      wsdlLocation = "file:///home/battlecall/myservice.xml",
                       endpointInterface = "com.cjl.MyService")
 
 public class MyServiceImplPortImpl implements MyService {
