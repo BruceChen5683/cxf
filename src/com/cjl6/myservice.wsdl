@@ -24,7 +24,7 @@
         </xs:sequence>
       </xs:complexType>
 
-      <xs:element name="getPersonById" type="tns:IdType"/>
+      <xs:element name="getPersonByIdRequest" type="tns:IdType"/>
 
       <xs:element name="getPersonByIdResponse" type="tns:personType"/>
 
@@ -34,7 +34,7 @@
 
   <!--message-->
   <wsdl:message name="getPersonById">
-    <wsdl:part name="parameters" element="tns:getPersonById"></wsdl:part>
+    <wsdl:part name="parameters" element="tns:getPersonByIdRequest"></wsdl:part>
   </wsdl:message>
 
   <wsdl:message name="getPersonByIdResponse">

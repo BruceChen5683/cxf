@@ -24,7 +24,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _GetPersonById_QNAME = new QName("http://cjl.com/", "getPersonById");
+    private final static QName _GetPersonByIdRequest_QNAME = new QName("http://cjl.com/", "getPersonByIdRequest");
     private final static QName _GetPersonByIdResponse_QNAME = new QName("http://cjl.com/", "getPersonByIdResponse");
 
     /**
@@ -58,9 +58,9 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}
      */
-    @XmlElementDecl(namespace = "http://cjl.com/", name = "getPersonById")
-    public JAXBElement<IdType> createGetPersonById(IdType value) {
-        return new JAXBElement<IdType>(_GetPersonById_QNAME, IdType.class, null, value);
+    @XmlElementDecl(namespace = "http://cjl.com/", name = "getPersonByIdRequest")
+    public JAXBElement<IdType> createGetPersonByIdRequest(IdType value) {
+        return new JAXBElement<IdType>(_GetPersonByIdRequest_QNAME, IdType.class, null, value);
     }
 
     /**
