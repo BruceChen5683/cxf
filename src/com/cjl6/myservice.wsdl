@@ -24,6 +24,12 @@
         </xs:sequence>
       </xs:complexType>
 
+      <xs:complexType name="ArrayPersonType">
+        <xs:sequence>
+          <xs:element name="persons"  maxOccurs="unbounded" minOccurs="0" type="tns:personType"></xs:element>
+        </xs:sequence>
+      </xs:complexType>
+
       <xs:element name="getPersonByIdRequest" type="tns:IdType"/>
 
       <xs:element name="getPersonByIdResponse" type="tns:personType"/>
