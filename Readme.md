@@ -28,4 +28,4 @@ wsdl2java -server -impl -frontend jaxws21 http://localhost:8080/myservice?wsdl
 
 XMLGregorianCalendar Date互相转化
 
-
+IdType包装或者不包装

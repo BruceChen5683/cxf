@@ -30,6 +30,16 @@
         </xs:sequence>
       </xs:complexType>
 
+
+      <xs:simpleType name="">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="READ_ONYL"></xs:enumeration>
+          <xs:enumeration value="READ_WRITE"></xs:enumeration>
+          <xs:enumeration value="FULL_CONTROL"></xs:enumeration>
+          <xs:enumeration value="NONE"></xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+
       <xs:element name="getPersonByIdRequest" type="tns:IdType"/>
 
       <xs:element name="getPersonByIdResponse" type="tns:personType"/>
