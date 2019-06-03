@@ -24,13 +24,25 @@
         </xs:sequence>
       </xs:complexType>
 
+      <!--array-->
       <xs:complexType name="ArrayPersonType">
         <xs:sequence>
           <xs:element name="persons"  maxOccurs="unbounded" minOccurs="0" type="tns:personType"></xs:element>
         </xs:sequence>
       </xs:complexType>
 
+      <!--void-->
+      <xs:complexType name="VoidType">
+      </xs:complexType>
 
+      <!--附件　-->
+      <xs:complexType name="AttachmentType">
+        <xs:sequence>
+          <xs:element name="content" type="xs:base64Binary"></xs:element>
+        </xs:sequence>
+      </xs:complexType>
+
+      <!--enum-->
       <xs:simpleType name="PermissionType">
         <xs:restriction base="xs:string">
           <xs:enumeration value="READ_ONYL"></xs:enumeration>
