@@ -31,7 +31,7 @@
       </xs:complexType>
 
 
-      <xs:simpleType name="">
+      <xs:simpleType name="PermissionType">
         <xs:restriction base="xs:string">
           <xs:enumeration value="READ_ONYL"></xs:enumeration>
           <xs:enumeration value="READ_WRITE"></xs:enumeration>
