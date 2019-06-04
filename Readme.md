@@ -29,3 +29,16 @@ wsdl2java -server -impl -frontend jaxws21 http://localhost:8080/myservice?wsdl
 XMLGregorianCalendar Date互相转化
 
 IdType包装或者不包装
+
+
+##### MTOM
+SOAP Message Transmission Optimization Mechanism (MTOM) 
+specifies an optimized method for sending binary data as part of a SOAP message.
+
+                   xmime:expectedContentTypes="application/octet-stream"
+
+
+The generated JAXB class generated for xRayType will no longer contain a byte[]. 
+Instead the code generator will see the xmime:expectedContentTypes attribute and generate a DataHandler for the imageData field.
+
+
