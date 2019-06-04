@@ -52,7 +52,7 @@
         </xs:restriction>
       </xs:simpleType>
 
-      <xs:element name="getPersonByIdRequest" type="tns:IdType"/>
+      <xs:element name="getPersonByIdRequest" type="tns:AttachmentType"/>
 
       <xs:element name="getPersonByIdResponse" type="tns:personType"/>
 

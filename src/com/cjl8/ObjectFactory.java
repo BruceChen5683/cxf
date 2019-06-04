@@ -35,11 +35,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link IdType }
+     * Create an instance of {@link AttachmentType }
      * 
      */
-    public IdType createIdType() {
-        return new IdType();
+    public AttachmentType createAttachmentType() {
+        return new AttachmentType();
     }
 
     /**
@@ -51,6 +51,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link IdType }
+     * 
+     */
+    public IdType createIdType() {
+        return new IdType();
+    }
+
+    /**
      * Create an instance of {@link ArrayPersonType }
      * 
      */
@@ -59,16 +67,24 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}
+     * Create an instance of {@link VoidType }
+     * 
+     */
+    public VoidType createVoidType() {
+        return new VoidType();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AttachmentType }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link AttachmentType }{@code >}
      */
     @XmlElementDecl(namespace = "http://cjl.com/", name = "getPersonByIdRequest")
-    public JAXBElement<IdType> createGetPersonByIdRequest(IdType value) {
-        return new JAXBElement<IdType>(_GetPersonByIdRequest_QNAME, IdType.class, null, value);
+    public JAXBElement<AttachmentType> createGetPersonByIdRequest(AttachmentType value) {
+        return new JAXBElement<AttachmentType>(_GetPersonByIdRequest_QNAME, AttachmentType.class, null, value);
     }
 
     /**
