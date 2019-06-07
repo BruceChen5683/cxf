@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
                       serviceName = "MyServiceImplService",
                       portName = "MyServiceImplPort",
                       targetNamespace = "http://cjl.com/",
-                      wsdlLocation = "file:src/com/cjl6/myservice.wsdl",
+                      wsdlLocation = "file:src/com/cjl8/myservice.wsdl",
                       endpointInterface = "com.cjl8.MyServicePortType")
 
 public class MyServiceImplPortImpl implements MyServicePortType {
@@ -43,6 +43,7 @@ public class MyServiceImplPortImpl implements MyServicePortType {
 
 //        文件上传
         try {
+
             byte[] buffer = parameters.getContent();
 
             OutputStream os = new FileOutputStream("temp_out.txt");

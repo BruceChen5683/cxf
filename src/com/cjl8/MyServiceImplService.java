@@ -26,7 +26,7 @@ public class MyServiceImplService extends Service {
     static {
         URL url = null;
         try {
-            url = new URL("file:src/com/cjl6/myservice.wsdl");
+            url = new URL("file:src/com/cjl8/myservice.wsdl");
         } catch (MalformedURLException e) {
             java.util.logging.Logger.getLogger(MyServiceImplService.class.getName())
                 .log(java.util.logging.Level.INFO,

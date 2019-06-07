@@ -1,9 +1,11 @@
 
 package com.cjl8;
 
+import javax.activation.DataHandler;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlMimeType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -33,16 +35,18 @@ import javax.xml.bind.annotation.XmlType;
 public class AttachmentType {
 
     @XmlElement(required = true)
-    protected byte[] content;
+    @XmlMimeType("application/octet-stream")
+    protected DataHandler content;
 
     /**
      * 获取content属性的值。
      * 
      * @return
      *     possible object is
-     *     byte[]
+     *     {@link DataHandler }
+     *     
      */
-    public byte[] getContent() {
+    public DataHandler getContent() {
         return content;
     }
 
@@ -51,9 +55,10 @@ public class AttachmentType {
      * 
      * @param value
      *     allowed object is
-     *     byte[]
+     *     {@link DataHandler }
+     *     
      */
-    public void setContent(byte[] value) {
+    public void setContent(DataHandler value) {
         this.content = value;
     }
 
