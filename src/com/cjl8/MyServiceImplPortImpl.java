@@ -7,6 +7,7 @@
 package com.cjl8;
 
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.logging.Logger;
 import javax.jws.WebMethod;
@@ -44,9 +45,12 @@ public class MyServiceImplPortImpl implements MyServicePortType {
 //        文件上传
         try {
 
-            byte[] buffer = parameters.getContent();
+            InputStream is = parameters.getContent().getInputStream();
+            byte[] buffer = new byte[1024];
+            is.read(buffer);
 
             OutputStream os = new FileOutputStream("temp_out.txt");
+
             os.write(buffer);
             os.close();
         }catch (Exception e){
