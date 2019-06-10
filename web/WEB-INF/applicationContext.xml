@@ -14,5 +14,7 @@
 
 
     <jaxws:endpoint id="myService" implementor="com.cjl.cxf.spring.MyServiceImpl" address="/myService"></jaxws:endpoint>
+
+    <jaxws:client id="myServiceClient" serviceClass="com.cjl.cxf.spring.MyService" address="http://localhost:8080/cjl/myService"></jaxws:client>
     
 </beans>
