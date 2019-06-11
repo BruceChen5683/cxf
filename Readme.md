@@ -41,4 +41,5 @@ specifies an optimized method for sending binary data as part of a SOAP message.
 The generated JAXB class generated for xRayType will no longer contain a byte[]. 
 Instead the code generator will see the xmime:expectedContentTypes attribute and generate a DataHandler for the imageData field.
 
-
+##### jmeter 性能测试
+模拟soap注意去除请求头
