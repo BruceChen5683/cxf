@@ -43,3 +43,6 @@ Instead the code generator will see the xmime:expectedContentTypes attribute and
 
 ##### jmeter 性能测试
 模拟soap注意去除请求头
+
+##### REST
+REpresentational State Transfer
